@@ -49,6 +49,7 @@ class CustomAdapter extends ArrayAdapter<Word> {
         EngTextView.setText(currentwords.getEngWord());
 
         ImageView MiwoImage= (ImageView) listItemView.findViewById(R.id.PhotuOP);
+        MiwoImage.setImageResource(currentwords.getMiwoImage());
 
         // Find the TextView in the list_item.xml layout with the ID version_number
         TextView MiwoTextView = (TextView) listItemView.findViewById(R.id.mewok_text_view);
