@@ -43,7 +43,7 @@ public class PhrasesActivity extends AppCompatActivity {
 
         words.add(new Word("Come here.", "әnni'nem"));
 
-        CustomAdapter itemsAdapter = new CustomAdapter(this, words);
+        CustomAdapter itemsAdapter = new CustomAdapter(this, words, R.color.category_phrases);
 
         ListView listView = (ListView) findViewById(R.id.list_view);
 

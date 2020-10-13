@@ -4,7 +4,8 @@ public class Word {
     private String miwokWord;
     private String engWord;
 
-    private int numMiwoImage;
+    private int numMiwoImage=-1;
+    private static final int hasImage=-1;
 
 
     public Word(String EngWord, String MiwoWord) {
@@ -22,6 +23,11 @@ public class Word {
     }
     public String getMiwokWord(){
         return miwokWord;
+    }
+    public boolean hasImage(){
+        return numMiwoImage!=hasImage;
+
+
     }
     public int getMiwoImage(){return numMiwoImage;}
     public String getEngWord(){
