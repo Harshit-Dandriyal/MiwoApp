@@ -16,10 +16,12 @@
 package com.example.android.miwok;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -85,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         // Find the View that shows the phrases category
         TextView phrases = (TextView) findViewById(R.id.phrases);
 
@@ -100,6 +103,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(phrasesIntent);
             }
         });
+
+    }
+
+    final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.color_black);
+    ImageButton playButton = (ImageButton) findViewById(R.id.imageButton);
+    public void PlayClick(View view){
+        mediaPlayer.start();
     }
 
 }

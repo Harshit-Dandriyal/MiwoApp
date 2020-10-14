@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 class CustomAdapter extends ArrayAdapter<Word> {
     private int ColorResourceId;
+    private int AudioResorceId;
 
     public CustomAdapter(Activity context, ArrayList<Word> words, int ColorId ) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.

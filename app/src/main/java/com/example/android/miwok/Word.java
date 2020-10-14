@@ -3,9 +3,11 @@ package com.example.android.miwok;
 public class Word {
     private String miwokWord;
     private String engWord;
+    private int AudioResourceId;
 
     private int numMiwoImage=-1;
     private static final int hasImage=-1;
+
 
 
     public Word(String EngWord, String MiwoWord) {
@@ -14,12 +16,17 @@ public class Word {
 
 
     }
-    public Word(String EngWord, String MiwoWord, int imageMiwo) {
+    public Word(String EngWord, String MiwoWord, int imageMiwo, int AudioId) {
         miwokWord = MiwoWord;
          numMiwoImage= imageMiwo;
         engWord = EngWord;
+        AudioResourceId=AudioId;
 
-
+    }
+    public Word(String EngWord, String MiwoWord, int imageMiwo) {
+        miwokWord = MiwoWord;
+        numMiwoImage= imageMiwo;
+        engWord = EngWord;
     }
     public String getMiwokWord(){
         return miwokWord;
